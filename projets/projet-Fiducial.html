@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio BTS SIO | Rémi Gente</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Icones -->
+  <link href="../portfolio/icon-portfolio.png" rel="icon">
+  <link href="../portfolio/icon-portfolio.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="../icofont/icofont.min.css">
+  <link rel="stylesheet" href="../ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <!-- Google Fonts -->
+  <link href="../css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Liens Fichiers CSS -->
+  <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+  <!-- Principal Fichier CSS Template -->
+  <link href="../portfolio/css/portfolio.css" rel="stylesheet">
+  <link rel="stylesheet" href="../projets/css/stage.css">
+  <link rel="stylesheet" href="../projets/css/btn-mission.css">
+
+
+
+</head>
+
+<body>
+
+<!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="d-flex flex-column">
+    <div class="profile">
+      
+      <script src="../luxon/global/luxon.js"></script>
+      <script language="JavaScript">
+        document.write("<center><font color='#ffffff' size='3' face='arial' id='clockDisplay'>");
+       document.write("</font></center>");
+      </script>
+
+
+
+      <section id="ma-section">
+        <img src="/portfolio/Rémi Gente Portrait.png" alt="" class="image-ronde">
+      </section>
+      
+
+
+      <h1 class="text-light"><a style="color: white;" onmouseover="this.style.color='grey'" onmouseout="this.style.color='white'" href="../index.html">Rémi GENTE</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a href="https://wa.me/33777496018" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="mailto:genteremi@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.linkedin.com/in/remi-gente" class="github"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <nav id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="../index.html#hero" class="nav-link scrollto active"><i class="bi bi-house"></i> <span>Accueil</span></a></li>
+        <li><a href="../index.html#about" class="nav-link scrollto"><i class="bx bx-user-circle"></i> <span>Profil</span></a></li>
+        <li><a href="../index.html#resume" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
+        <li><a href="../index.html#stages" class="nav-link scrollto"><i class='bx bx-briefcase-alt '></i> <span>Expériences professionnelles</span></a></li>
+        <li><a href="../index.html#skills" class="nav-link scrollto"><i class='bx bx-file'></i> <span>Compétences</span></a></li>
+        <li><a href="../index.html#projets" class="nav-link scrollto"><i class="bx bx-folder"></i> <span>Projets</span></a></li>
+        <li><a href="../index.html#veille" class="nav-link scrollto"><i class="bx bxs-file-pdf"></i> <span>Veille Technologiques</span></a></li>
+          <a href="../index.html#epreuve" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuves</span></a>
+          <ul class="sub-menu">
+            <li style="margin-left:33px"><a href="epreuve-E4.html" class="e1-link">Épreuve E4</a></li>
+            <li style="margin-left:33px"><a href="epreuve-E5.html" class="e2-link">Épreuve E5</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#contact" class="nav-link scrollto"><i class="bx bx-mail-send "></i> <span>Contact</span></a></li>
+      </ul>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var btsSio = document.querySelector('#navbar .bts-sio');
+          btsSio.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            var submenu = this.querySelector('.sub-menu');
+            submenu.classList.toggle('active');
+            // Ajoutez ou retirez une classe spécifique pour ajuster la hauteur du padding
+            if (submenu.classList.contains('active')) {
+              document.getElementById('navbar').classList.add('submenu-open');
+            } else {
+              document.getElementById('navbar').classList.remove('submenu-open');
+            }
+          });
+
+          // Gestionnaire d'événements pour E1
+          var e1Link = document.querySelector('.e1-link');
+          e1Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "epreuve-E4.html";
+          });
+
+          // Gestionnaire d'événements pour E2
+          var e2Link = document.querySelector('.e2-link');
+          e2Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "epreuve-E5.html";
+          });
+        });
+
+      </script>
+
+    </nav>
+  </div>
+</header>
+<!-- Fin Header -->
+
+
+<main id="main">
+
+  <!-- ======= Menu ======= -->
+  <section style="border-bottom: solid" id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h1 style="font-size: xx-large">PROJET n°3 - Projet en entreprise</h1>
+        <ol style="font-size: 20px">
+          <li><a style="color:#0e2442; text-decoration: underline" href="../index.html"><b><i class="bi bi-caret-left-fill"></i> Revenir à l'accueil</b></a></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Menu -->
+
+
+
+  <!-- ======= Projet Section ======= -->
+  <section id="portfolio-details" class="portfolio-details">
+    <div class="container">
+
+      <div class="row gy-4">
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper">
+            <div style="max-height: 80%" class=" align-items-center">
+              <div class="swiper-slide container-img-stage">
+                <img src="img/Fiducial2.png" alt="">
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div style="margin-top: 20%" class="portfolio-info">
+            <h3>Informations du Projet :</h3>
+            <ul>
+              <li><strong>Catégorie </strong>: Dépannage PC</li>
+              <li><strong>Logiciels Utilisé  </strong>: Windows 11, Acronnis.</li>
+              <li><strong>Date du projet </strong>: 2024</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div style="margin-right: 20px; margin-left: 20px; overflow: hidden;" class="portfolio-description">
+        <h1 style="text-decoration: underline; text-align: center; font-size: xx-large">Projet d'un renouvellement de poste au sein d'une entreprise</h1>
+        <br><br>
+        <h3 style="text-decoration: underline; font-size: x-large">Contexte du projet : </h3> <br>
+        <a>
+          <li><span class="alinea-text">Le </span> renouvellement du PC s'inscrit dans le cadre du cycle de mise à jour du matériel informatique afin de garantir des 
+            performances optimales, une meilleure sécurité et une compatibilité avec les outils et logiciels récents. Cette initiative vise à offrir aux collaborateurs 
+            des équipements adaptés à leurs besoins professionnels, tout en favorisant une productivité accrue et une expérience utilisateur améliorée. </li>
+        </a>
+        <br><br>
+        <h3 style="text-decoration: underline; font-size: x-large">Objectif : </h3> <br>
+        <a>
+          <li>
+            <span class="alinea-text">L</span>'objectif de ce renouvellement est de remplacer l'ancien poste d'un collaborateur par un PC plus récent tout en conservant 
+            ses données. Pour ce faire, nous utiliserons plusieurs logiciels afin de faciliter cette transition.
+          </li>
+        </a>
+        <br><br>
+        <h3 style="text-decoration: underline; font-size: x-large">Première étapes : </h3> <br>
+        <a>
+          <li>
+            <span class="alinea-text">Une</span>fois le pc du client récupérer, la première chose a faire est de 
+            faire une sauvegarde de ces donnée via l'application Acronis :
+          </li>
+        </a>
+        <br>
+        <a>
+          <li>
+            Pour cela il faut boot sur la clé :
+          </li>
+        </a>
+        <br><br>
+        <img class="element" src="img/Fiducial 3.JPG" style="max-width: 80%; height: 80%;">
+        <br><br>
+        <a>
+          <li>
+            Puis une fois dans Acronis slectionné sauvegarde des données :
+          </li>
+        </a>
+        <br><br>
+        <img class="element" src="img/Fiducial4.JPG" style="max-width:  80%; height: 80%;">
+        <br><br>
+        <h3 style="text-decoration: underline; font-size: x-large">Deuxième étapes : </h3> <br>
+        <a>
+          <li>
+            Une fois la sauvegarde fini on peut boot sur le windows et rentre sur le compte utilisateur du collaborateur avec sont mot de passe.
+            Puis, il faut suivre le chemain suivant : C:\Users\(Nom du compte). Sélectionner tout les éléments de ce dosseier et les tranférer 
+            sur un disque dur :
+          </li>
+        </a>
+        <br><br>
+        <img class="element" src="img/Fiducial5.png" style="max-width:  80%; height: 80%;">
+        <br><br>
+        <a>
+          <li>
+            Ensuite, faut afficher les dosseier cacher et allez dans roming et récupérer le dossier Thunderbird (c'est la boite mail) :
+          </li>
+        </a>
+        <br><br>
+        <img class="element" src="img/Fiducial6.png" style="max-width:  80%; height: 80%;">
+        <br><br>
+        <a>
+          <li>
+            Pour finir, il suffit juste de transférer les application de la clé USB au nouveau pc du client et de le mettre dans le même 
+            emplacement.
+          </li>
+        </a>
+        <br><br>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Projet Section -->
+
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright 2024 <strong><br><span>Designed by Rémi GENTE</span></strong>
+    </div>
+    <div class="credits">
+      Tous droits réservés
+    </div>
+  </div>
+</footer>
+<!-- End  Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- Vendor JS Files -->
+<script src="../assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="../assets/vendor/aos/aos.js"></script>
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="../assets/vendor/typed.js/typed.umd.js"></script>
+<script src="../assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="../portfolio/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,850 @@
+﻿
+<!-- =======================================================
+  * Nom du projet : Portfolio
+  * Creation : Novembre 2024
+  * Auteur : Rémi Gente
+  ======================================================== -->
+
+<!DOCTYPE html>
+<!--suppress JSPrimitiveTypeWrapperUsage, HtmlDeprecatedAttribute -->
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio BTS SIO | Rémi GENTE</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="npm/bootstrap%405.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+  <!-- Google Fonts -->
+  <link href="css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Liens CSS -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Principal Fichier CSS Template -->
+  <link href="portfolio/css/portfolio.css" rel="stylesheet">
+
+  <!-- Liens JS  -->
+  <script src="portfolio/js/main.js"></script>
+  <script src="ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="portfolio/js/flip-box.js"></script>
+  <script src="particles.js-master/app.js"></script>
+  <script src="particles.js-master/package.json"></script>
+  <script src="particles.js-master/particles.js"></script>
+  <script src="particles.js-master/particles.min.js"></script>
+  <script src="particles.js-master/particles.json"></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async="" src="gtag/js?id=G-2EBNGEFN1F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2EBNGEFN1F');
+  </script>
+
+</head>
+
+<body>
+
+<script src="npm/%40popperjs/core%402.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="npm/bootstrap%405.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<script src="npm/bootstrap%405.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<!-- ======= Mobile nav toggle button ======= -->
+<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+<!-- ======= Header ======= -->
+<header id="header">
+  <div class="d-flex flex-column">
+    <div class="profile">
+          <section id="ma-section">
+            <img src="portfolio/Rémi Gente Portrait.png" alt="Description de l'image" class="image-ronde">
+          </section>
+          
+      <h1 class="text-light"><a style="color: white; font-size: x-large" onmouseover="this.style.color='grey'" onmouseout="this.style.color='white'" href="index.html">Rémi GENTE</a></h1>
+      <div class="social-links mt-3 text-center">
+        <a href="https://wa.me/33777496018" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+        <a href="mailto:genteremi@gmail.com" class="gmail"><i class="bx bxl-gmail"></i></a>
+        <a href="https://www.linkedin.com/in/remi-gente" class="github"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+
+    <!-- nav-menu -->
+    <nav style="font-size: small" id="navbar" class="nav-menu navbar">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bi bi-house"></i> <span>Accueil</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user-circle "></i> <span>Profil</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bxs-graduation"></i> <span>Parcours</span></a></li>
+        <li><a href="#pro" class="nav-link scrollto"><i class='bx bx-briefcase-alt '></i> <span>Expériences professionnelles</span></a></li>
+        <li><a href="#skills" class="nav-link scrollto"><i class='bx bx-file '></i> <span>Compétences</span></a></li>
+        <li><a href="#projets" class="nav-link scrollto"><i class='bx bx-folder '></i> <span>Projets</span></a></li>
+        <li><a href="#veille" class="nav-link scrollto"><i class="bx bxs-file-pdf"></i> <span>Veille Technologiques</span></a></li>
+        <li class="bts-sio">
+          <a href="#epreuve" class="nav-link scrollto"><i class="bx bx-book-content"></i><span>Épreuves</span></a>
+          <ul class="sub-menu">
+            <li style="margin-left:33px"><a href="projets/epreuve-E4.html" class="e1-link">Épreuve E4</a></li>
+            <li style="margin-left:33px"><a href="projets/epreuve-E5.html" class="e2-link">Épreuve E5</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-mail-send "></i> <span>Contact</span></a></li>
+      </ul>
+
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var btsSio = document.querySelector('#navbar .bts-sio');
+          btsSio.addEventListener('click', function(e) {
+            e.preventDefault();
+            this.classList.toggle('active');
+            var submenu = this.querySelector('.sub-menu');
+            submenu.classList.toggle('active');
+            // Ajoutez ou retirez une classe spécifique pour ajuster la hauteur du padding
+            if (submenu.classList.contains('active')) {
+              document.getElementById('navbar').classList.add('submenu-open');
+            } else {
+              document.getElementById('navbar').classList.remove('submenu-open');
+            }
+          });
+          // Gestionnaire d'événements pour E1
+          var e1Link = document.querySelector('.e1-link');
+          e1Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "projets/epreuve-E4.html";
+          });
+          // Gestionnaire d'événements pour E2
+          var e2Link = document.querySelector('.e2-link');
+          e2Link.addEventListener('click', function(e) {
+            e.stopPropagation();
+            window.location.href = "projets/epreuve-E5.html";
+          });
+        });
+      </script>
+    </nav>
+  </div>
+</header>
+<!-- Fin Header -->
+
+
+<!-- ======= Home Section ======= -->
+<div>
+  <!-- particles.js -->
+  <div style="background-image: url('portfolio/img/home page/background.png'); background-size: cover" id="particles-js">
+    <div id="hero">
+      <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <h1>Rémi GENTE</h1>
+        <p>ÉTUDIANT EN BTS SIO - OPTION SISR</p>
+        <p><b><span class="typed" data-typed-items="Bienvenue sur mon Portfolio"></span></b></p>
+      </div>
+      <div class="arrow-scroll">
+        <div class="arrow-scroll__wrap arrow-scroll__wrap_animated">
+          <a href="#about"><img class="img-scroll" src="flèche_de_scroll/2985/2985150.png" alt="Scroll down"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- scripts -->
+  <script src="particles.js-master/particles.js"></script>
+  <script src="particles.js-master/app.js"></script>
+</div>
+<!-- Fin Home Section -->
+
+
+<main id="main">
+  <!-- ======= Profil Section  ======= -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-title">
+        <h2>A PROPOS DE MOI 💭</h2>
+        <!--suppress HtmlDeprecatedAttribute -->
+        <p style="text-align: justify">
+            <span class="alinea-text"> Bonjour je suis Rémi Gente, apprenant en <b>BTS SIO</b> (Services Informatiques aux Organisations) dans l'école <b>Sciences-U</b>, 
+              dans la spécialité <b>SISR</b> (Solutions d'Infrastructure, Systèmes et Réseaux).
+
+              Toujours en cours d'étude, à l'issue de mon BTS, j'envisage de continuer par une année de <b>Bachelor</b>.
+              
+              En attendant, je vous propose ce portfolio qui est une vitrine de mes réalisations académiques, de mes compétences et de mon parcours, et 
+              je suis ravi de vous inviter à explorer mon travail. Vous découvrirez mes projets, mon engagement dans l'informatique, mes compétences, 
+              et mon parcours académique. 
+        </p>
+      </div>
+      <br>
+      <div class="row">
+        <div class="row">
+
+         <!--
+
+         <div style="padding-top: 3%" class="col-lg-3" data-aos="fade-right">
+            <img style="border-style: solid; border-radius: 100%;max-width: 85%" src="portfolio/img/home%20page/profil.png" class="img-fluid img-effect-profil" alt="">
+          </div>
+
+           -->
+
+          <div style="width: 75%" class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <br>
+            <div>
+              <h3> <span class="alinea-text"> - </span> Étudiant en BTS SIO (2023 - 2025) 🤵</h3>
+              <br>
+              <p class="fst-italic">
+                Étudiant de 2ᵉ année en BTS SIO - option SISR au Campus Sciences-U - Lyon 3.
+              </p>
+              <br>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>École :</strong> <span>Campus Sciences-U - Lyon (3)</span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Diplômes :</strong> <span>   Bac Professionnel  </span></li>
+
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Telephone :</strong> <span><a style="color: black" href="tel:0777496018">07 77 49 60 18</a></span></li>
+                    <li><i class="bi bi-chevron-right"></i> <strong>Email :</strong> <span><a style="color: black" href="mailto:genteremi@gmail.com">genteremi@gmail.com</a></span></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-15 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <br><br>
+            <h3><span class="alinea-text"> - </span> Projet professionnel 🏢</h3>
+            <br>
+            <p style="text-align: justify">
+              <span class="alinea-text">Professionnellement,</span>
+              je souhaite m’orienter vers le métier <b>« d'Expert Réseau Infrastructures et Sécurité »</b>.
+              <br>
+              Après l’obtention de mon <b>BTS SIO - BAC+2 </b>, je souhaiterais poursuivre mon cursus en suivant la formation <b>BACHELOR - BAC+3 </b>.
+              <br>
+              <br><br>
+              <span class="alinea-text">Actuellement </span>
+              , je suis en alternance pour mes 2 années de BTS
+              <br>
+            <div id="outer">
+              <div style="margin-right: 30px" class="button_slide">
+                <a href="portfolio/docs/CV Rémi Gente.pdf" target="_blank">
+                  <i class="fa fa-eye icon-xs m-5px-r" aria-hidden="true"></i><span>Consulter CV</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Profil Section -->
+
+
+  <!-- ======= Parcours Section ======= -->
+  <section style="background: linear-gradient(180deg, rgba(189,205,208,1) 0%, rgba(255,255,255,1) 30%);" id="resume" class="resume">
+    <div class="container">
+      <div class="section-title">
+        <h2>Parcours 🎓</h2>
+        <p><i> Mon cursus scolaire, mes différentes formations et mon parcours professionnel.</i></p>
+      </div>
+      <div class="row">
+        <div style="padding-left: 40px" class="col-lg-6" data-aos="fade-right">
+          <h3 class="resume-title">Cursus scolaire 🏫</h3>
+          <div class="resume-item">
+            <h4>BTS SIO</h4>
+            <h5>2023 - A ce jour</h5>
+            <p><em>BTS SIO - OPTION SISR</em></p>
+            <p>Campus Sciences-U - Lyon 3
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>LYCEE Professionnel </h4>
+            <h5>2020 - 2023</h5>
+            <p><em>BAC Professionnel  - OPTION Stystème nud <br></em></p>
+            <p>Ecole La Mâche - Lyon 8
+            </p>
+          </div>
+          <div class="resume-item">
+            <h4>COLLEGE Professionnel</h4>
+            <h5>2019 - 2020</h5>
+            <p>Ecole La Mâche - Lyon 8</p>
+          </div>
+          <br><br><br><br><br><br><br>
+
+        <section style="background: linear-gradient(180deg, rgba(189,205,208,1) 0%, rgba(255,255,255,1) 30%);" id="pro" class="pro"></section>
+          <div id="pro" class="section-title">
+            <h2>Expériences professionnelles 💼</h2>
+            <p><i> Voici les différents stages que j'ai effectué durant ma vie d'étudiant.</i></p>
+          </div>
+          <div class="resume-item">
+            <h4>Alternance Fiducial</h4>
+            <h5>2023 - A ce jour</h5>
+            <p><em>Alternance de mes 2 années en BTS <br>Mon alternance s'effectue dans l'entreprise Fiducial au sein du service support proximité. </em></p>
+            <ul>
+              <li>FIDUCIAL - Siège <br>
+                <i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/6n8SNxdezP8VtnLi8" target="_blank">19 Rue Cottin, 69009 Lyon</a>
+              </li>
+              <li>
+                <i class="bi bi-globe2"></i> <a href="https://www.fiducial.fr/" target="_blank">Fiducial</a>
+              </li>
+            </ul>
+          </div>
+          <div class="resume-item">
+            <h4>STAGE Safran Landing Systèmes</h4>
+            <h5>2023 (8 semaines)</h5>
+            <p><em>Stage effectué en première à l'Ecole La Mâche <br> Stage suivi dans l'entreprise Safran Landing Systèmes au sein du support 
+              proximité de machine et four à haute tension. </em></p>
+              <ul>
+                <li>Safran Landing Systèmes <br>
+                  <i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/RqcLSV9QQhKZU5C29" target="_blank">7 Av. du Bel-Air, 69100 Villeurbanne</a>
+                </li>
+                <li>
+                  <i class="bi bi-globe2"></i> <a href="https://www.safran-group.com/" target="_blank">Safran</a>
+                </li>
+              </ul>
+          </div>
+
+        </div>
+
+        <div style="padding-right: -10px" class="col-lg-6" data-aos="fade-left">
+          <h3 class="resume-title">Centre d'intérêt 🏃‍♂️</h3>
+          <div class="resume-item">
+            <h4>Judo</h4>
+            <h5>2008 - maintenant</h5>
+            <p><em>La pratique de sport me permet de voir la compléxité de la vie mais aussi comment des amis chers peuvent t'aider à aller plus haut.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>VOYAGE</h4>
+            <p><em>La découverte de nouvelle culture, et mode de vie apporte une ouverture sur le monde et
+              les environnements. Cela permet de sortir de sa zone de confort et d’explorer de nouvelles
+              technologies.</em></p>
+          </div>
+          <div class="resume-item">
+            <h4>Foot</h4>
+            <h5>2010 - 2020</h5>
+            <p><em>Cela m'a permis d'apprendre l'esprit d'équipe </em></p>
+          </div>
+        </section>
+
+  <!-- Fin Parcours Section -->
+ <section style="background: linear-gradient(to top, #bdcdd0, #ffffff);" id="skills" class="skills section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Mes compétences 🔧</h2>
+        <br>
+        <p style="text-align: justify">
+            <span class="alinea-text">Au</span> cours de mon cursus, j'ai pu obtenir plusieurs certifications et diplômes que vous trouverez
+            ci-dessous.<br>
+            Les connaissances que j'ai acquises au sein de ces formations m'ont permises de développer mes compétences en informatiques.
+            Parallèlement, j'ai également obtenu d'autres certifications grâce à ma propre initiative. J'ai réussi à obtenir des certifications
+            supplémentaires me permettant d'approfondir mes connaissances et compétences.
+        </p>
+      </div>
+    <!-- ======= Outils/Logiciels Section ======= -->
+    <section style="height: 550px; " class="testimonials section-bg">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <br>
+            <h3 style="color: #173b6c"><b><span class="alinea-text"> - </span> Outils/Logiciels utilisés ⚙️</b></h3>️
+            <p class="fst-italic"><span class="alinea-text"><span class="alinea-text">Les</span></span> différents outils et logiciels que j'ai rencontrés et utilisés lors de ma formation.</p>
+          </div>
+        </div>
+        <br>
+        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div style="height: 300px" class="swiper-wrapper ">
+            <div class="swiper-slide">
+              <div class="testimonial-item img-" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/cisco-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>CISCO</h3>
+                <h4>Cisco Systems est spécialisé dans le matériel réseau et dans les serveurs. Puis s'est largement diversifié dans les logiciels et notamment la cybersécurité. </h4>
+              </div>
+          </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item img-" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/azure-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>Microsoft Azure</h3>
+                <h4>Microsoft Azure est la plate-forme applicative en nuage de « cloud computing » de Microsoft. </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/vmware-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>VMware</h3>
+                <h4>VMware vSphere est la plate-forme de virtualisation leader pour la création d'infrastructures de Cloud Computing.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/oracleVM-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>Oracle VM VirtualBox</h3>
+                <h4>Oracle VM VirtualBox est un logiciel libre de virtualisation publié par Oracle.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/putty-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>PuTTY</h3>
+                <h4>PuTTY est un émulateur de terminal pour Windows permettant la connexion à une machine distante par protocole ssh.
+                  Avec ce logiciel, vous pouvez travailler, depuis votre ordinateur personnel, sur une machine Linux du DMS, en mode ligne de commandes.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/PacketTracer-icon.png" class="testimonial-img img-effect" alt="">
+                <h3>Pfsense</h3>
+                <h4>Simulateur de matériel réseau Cisco.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/pfsense-logo.png" class="testimonial-img img-effect" alt="">
+                <h3>Pfsense</h3>
+                <h4>Pare-feu sous linux avec interface graphique.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/windows-server.png" class="testimonial-img img-effect" alt="">
+                <h3>Windows Serveur</h3>
+                <h4>Windows Server gère réseaux, utilisateurs, et services d’entreprise comme Active Directory et la virtualisation.
+                </h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/logmein.png" class="testimonial-img img-effect" alt="">
+                <h3>Logmein</h3>
+                <h4>Permet la prise en main à distance d'un PC du client.</h4>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <img src="portfolio/img/icons%20logiciel/AD.png" class="testimonial-img img-effect" alt="">
+                <h3>Active Directory</h3>
+                <h4>utilisation de l'active directory pour les groupes et utilisateurs au sein d'une entreprise.</h4>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <span class="alinea-text"><center>Pour </span>
+    plus d'informations sur mes compétences :</center>
+    <div id="outer">
+    <div>
+      <div style="margin-right: 30px" class="button_slide">
+        <a href="/projets/Doc_projet/Doc_E4/Tableau_des_Compétence_Rémi_Gente_2025.pdf" target="_blank">
+          <i class="fa fa-eye icon-xs m-5px-r" aria-hidden="true"></i><span>Tableau des Compétence</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Fin Compétences Section -->
+
+
+
+  <!-- ======= Projets Section ======= -->
+  <section style="background: linear-gradient(to bottom, #bdcdd0, #ffffff);" id="projets" class="skills section-bg">
+    <div class="container">
+      <div class="section-title">
+        <h2>Mes Projets 💻</h2>
+        <br>
+        <p style="text-align: justify">
+          <span class="alinea-text">Ci-dessous</span> vous retrouverez tous mes projets réalisés au cours de mon parcours de formation, cliquez sur l'un de mes projets pour en savoir plus !
+        </p>
+      </div>
+
+      <br>
+      <section style="border-radius: 15px; background-image: url(portfolio/img/background/background.png); background-size: 100% auto;" class="portfolio section-bg">
+        <div class="container">
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center cours-complets">
+              <ul style="background: linear-gradient( to top,#102034, #3a3a3b)" id="portfolio-flters-3">
+                <li data-filter="*" class="filter-active">Tous</li>
+                <li data-filter=".filter-Site-Internet">Site-Internet</li>
+                <li data-filter=".filter-Projet-Ecole">Projet-Ecole</li>
+                <li data-filter=".filter-smartcity">Projet-Alternance</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Site-Internet">
+              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                <img src="projets/img/portfolio.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="projets/img/portfolio.png" class="portfolio-lightbox" title="Conception et réalisation d'un site vitrine Portfolio <br> Conception durant ma formation (2023-2024) "><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="projets/projet-portfolio.html">
+                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Projet-Ecole">
+              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                <img src="projets/img/GSB_Project.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="projets/img/GSB_Project.png" class="portfolio-lightbox" title="Réalisation d'une Smart City sur Cisco Packet Tracer <br> Conception durant ma seconde année de formation (2024)"><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="projets/projet-GSB.html">
+                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Projet-Alternance">
+              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                <img src="projets/img/Fiducial2.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="projets/img/Fiducial.png" class="portfolio-lightbox" title="Participation à un projet commun entre SISR et SLAM <br> Conception durant ma formation (2023-2024) "><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="projets/projet-Fiducial.html">
+                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-Projet-Ecole">
+              <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
+                <img src="projets/img/L'Opal.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="projets/img/L'Opal.png" class="portfolio-lightbox" title="Proejt sur l'entreprise l'Opal"><i class="bi bi-eye-fill"></i> <h6>Détails</h6></a>
+                  <a href="projets/projet-Opal.html">
+                    <i class="bi bi-link-45deg"></i> <h6>En savoir plus</h6>
+                  </a>
+                </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+    <!-- ========== Veille section  ========== -->
+    <section style=" background: linear-gradient(to bottom, #ffffff, #bdcdd0);" id="veille" class="faq">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Veille Technologique</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a  id= "icon" data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq-list-1">Qu'est ce que la veille
+                technologique ?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p class="description">
+                  La veille technologique consiste à surveiller les
+                  évolutions techniques, les innovations dans un secteur
+                  d’activité donné, prendre les informations les plus
+                  pertinentes et les plus récentes afin de passer le moins de
+                  temps possible sur des recherches d'informations. Pour
+                  faciliter les recherches, il faut que la collecte, le
+                  partage et la diffusion d'informations permettes d'anticiper
+                  ou de s'informer sur des changements en matière de
+                  recherche.
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a  id= "icon" data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">
+                Qu'est ce que le but d'une veille technologique ?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p class="list-obj">
+                  - Suivre les évolutions techniques <br />
+                  - Etre informé des inventions et innovations des concurrents
+                  <br />
+                  - Diminuer les coûts de production <br />
+                  - Augmenter nos compétences <br />
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a  id= "icon" data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Quelles sont les outils de ma
+                veille ?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <span class="header-infos">
+                  Pour veiller aux dernières tendances de la RGPD
+                  j'ai utilisé :
+                </span>
+                <h6>Google Actualités & Alerte : </h6>
+                <p class="definition">
+                  Un outil simple d’utilisation qui permet de se tenir
+                  informé des dernières technologies sorties et lois.</p>
+
+                  <h6>Forum : </h6>
+                  <p class="definition">
+                    De nombreux forums pour s'informer rapidement et simplement.</p>
+
+                  <h6>Site officiel de le RGPD : </h6>
+                    <p class="definition">
+                      Utilisation du site officiel pour voir les lois mises en place 
+                      de la RGPD, et les évolutions en cours.
+                    </p>
+
+                    <h6>Youtube  : </h6>
+                    <p class="definition">
+                      Utilisation des videos Youtube pour des informations très rapides et condensées pour maximiser les données.
+                    </p>
+
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a id= "icon" data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">
+                Quelle a été le sujet de ma veille technologie ?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <span class="header-infos">
+                  J'ai décidé de traiter sur le sujet de
+                  la RGPD en France et en Europe, qui est en
+                  constante évolution pour permettre la sécurité des informations des utilisateurs.
+                </span>
+                <br />
+                <h5>Principal problématique :</h5>
+                <h6>Comment améliorer les lois de la RGPD ?</h6>
+                <p class="prob1">
+                  Nous allons répondre à cette problématique en distingant
+                  trois thématiques :
+                </p>
+                <p class="subject1"> - <strong>Théme 1</strong> : Qu'est ce que la RGPD ?</p>
+                <p class="subject2"> - <strong>Théme 2</strong> : Quelle sont les lois déja mises en place ?</p>
+                <p class="subject2"> - <strong>Théme 3</strong> : Comment rendre la RGPD encore plus sûre ?</p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="500">
+              <i class="bx bx-help-circle icon-help"></i>
+              <a  id= "icon" data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">
+                Quelles sont les différents thématiques abordés ?
+                <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+
+                <!-- ========== Thème 1 ========== -->
+                <h4>Théme 1 : Qu'est ce que la RGPD ?</h4>
+                <div class="blog-meta">
+                  <p><i class="bx bx-news"> Site Officiel</i></p>
+                  <p><i class="bx bxs-calendar"> 11/04/2023</i></p>
+                </div>
+
+                <h5>Définition :</h5>
+                <p class="description">
+                  C'est le règlement général de protection des données (RGPD).
+                  C'est un texte réglementaire européen qui encadre le traitement des données de manière 
+                  égalitaire sur tout le territoire de l'Union européenne (UE)
+                </p>
+                  <a class="btn" href="https://www.economie.gouv.fr/entreprises/reglement-general-protection-donnees-rgpd" target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+                <!-- <img src="" alt="" width="400" />  -->
+                <p class="description">
+                  Voici un deuxième exemple plus explicite pour nous montrer l'importance de la RGPD en Europe.
+                </p>
+                  <a class="btn" href="https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on"
+                    target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+                  <hr>
+                <!-- ========== Thème 2 ========== -->
+                <h4>
+                  Théme 2 : Quelle sont les lois déja mises en place ?
+                </h4>
+                <div class="blog-meta">
+                  <p><i class="bx bx-news"> Commission Euréenne</i></p>
+                  <p><i class="bx bxs-calendar"> 24-06-2021</i></p>
+                </div>
+                <h5>
+                  Le droit à l'information et la transparence  :
+                </h5>
+                <p class="description">
+                  Le RGPD exige que les entreprises informent clairement les individus sur la collecte et l'usage de leurs données. 
+                  Vous pouvez consulter cette page de la Commission européenne pour plus de détails.
+                </p>
+                  <a class="btn" href="https://commission.europa.eu/law/law-topic/data-protection/reform/rights-citizens/my-rights/what-are-my-rights_fr"
+                    target="_blank"> Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+
+                  <div class="blog-meta">
+                    <p><i class="bx bx-news"></i> Commission Euréenne</p>
+                    <p><i class="bx bxs-calendar"></i> 29-06-2022</p>
+                  </div>
+                <h5>Les droits de rectification, d'effacement et de limitation du traitement :</h5>
+                <p class="description">
+                  Ces droits permettent aux individus de corriger leurs données, de demander leurs suppressions ou de restreindre leurs traitements sous certaines conditions. 
+                  Voir ici pour une explication approfondie :
+                </p>
+                  <a class="btn" href="https://www.edpb.europa.eu/sme-data-protection-guide/respect-individuals-rights_fr" target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+
+                  <div class="blog-meta">
+                    <p><i class="bx bx-news"></i> Your Europe</p>
+                    <p><i class="bx bxs-calendar"></i> 04/01/2022</p>
+                  </div>
+                <h5> Les obligations des entreprises :</h5>
+                <p class="description">
+                  Le RGPD impose aux entreprises des obligations essentielles, comme la transparence et la collecte limitée aux données nécessaires. 
+                  Les entreprises doivent informer les personnes sur la collecte de leurs données, obtenir leur consentement explicite et documenté, 
+                  et assurer la sécurité des informations recueillies. Dans certains cas, elles doivent nommer un délégué à la protection des données (DPD) 
+                  et réaliser une analyse d’impact pour limiter les risques liés au traitement des données sensibles.
+                </p>
+                  <a class="btn" href="https://europa.eu/youreurope/business/dealing-with-customers/data-protection/data-protection-gdpr/index_fr.htm"
+                    target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+                  <hr>
+                <!-- ========= Thème 3 ========== -->
+                <h4>
+                  Théme 3 : Comment rendre la RGPD encore plus sûre
+                  ?
+                </h4>
+                <div class="blog-meta">
+                  <p><i class="bx bx-news"></i> CNIL</p>
+                  <p><i class="bx bxs-calendar"></i> 04-01-2024</p>
+                </div>
+                <h5>Guide de la sécurité des données personnelles :</h5>
+                <p class="description">
+                  Ce guide aide les professionnels à mettre en œuvre les mesures de sécurité nécessaires pour respecter le RGPD. 
+                  Il propose des fiches pratiques sur divers sujets, comme la sécurisation des réseaux, l’authentification, ou la gestion des incidents. 
+                  Ce document est une ressource clé pour renforcer la sécurité des données personnelles dans les entreprises et organisations.
+                </p>
+                  <a class="btn" href="https://www.cnil.fr/fr/guide-de-la-securite-des-donnees-personnelles" target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+                  <div class="blog-meta">
+                    <p><i class="bx bx-news"></i> CNIL</p>
+                    <p><i class="bx bxs-calendar"></i> 2022-2024</p>
+                  </div>
+                <h5>
+                  Les nouveautés du RGPD en 2024
+                </h5>
+                <p class="description">
+                  Cet article discute des initiatives récentes pour renforcer l'application du RGPD, comme une meilleure coopération entre les autorités européennes 
+                  de protection des données et de nouvelles règles de conformité pour les entreprises. Ces mesures visent à harmoniser la protection des données dans 
+                  les cas transfrontaliers et à promouvoir une utilisation éthique des données.
+                </p>
+                  <a class="btn" href="https://www.cnil.fr/fr/la-cnil-publie-son-plan-strategique-2022-2024"
+                    target="_blank">Article
+                    <i class='bx bx-link-external'></i>
+                  </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ========== Fin Veille section ==========  -->
+
+  <!-- ======= Contact Section ======= -->
+  <section style=" background: linear-gradient(to bottom, #bdcdd0, #ffffff);" id="contact" class="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <p>N’hésitez pas à me contacter pour toutes questions ou renseignements complémentaires via ce formulaire.</p>
+      </div>
+      <div class="row" data-aos="fade-in">
+        <div class="col-lg-5 d-flex align-items-stretch">
+          <div class="info">
+            <div class="address">
+              <i class="bi bi-geo-alt"></i>
+              <h4>Localisation :</h4>
+              <p>69 - Lyon, France</p>
+            </div>
+            <div class="email">
+              <i class="bi bi-envelope"></i>
+              <h4>Email :</h4>
+              <p><a style="color: #173b6c" href="mailto:genteremi@gmail.com">genteremi@gmail.com</a></p>
+            </div>
+            <div class="phone">
+              <i class="bi bi-phone"></i>
+              <h4>Téléphone :</h4>
+              <p><a style="color: #173b6c" href="tel:0777496018">07 77 49 60 18</a></p>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44538.526951565014!2d4.793930677772869!3d45.75800318057543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea516ae88797%3A0x408ab2ae4bb21f0!2sLyon!5e0!3m2!1sfr!2sfr!4v1731515245529!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen="" title="Google Map of Paris"></iframe>
+          </div>
+        </div>
+        <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+          <div class="container">
+            <h1>Formulaire de Contact</h1>
+            <br>
+            <form target="_blank" action="https://formsubmit.co/genteremi@gmail.com" method="POST">
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Votre Nom" required="">
+                  </div>
+                  <br>
+                  <div class="col">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Votre adresse email" required="">
+                  </div>
+                  <br>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea placeholder="Votre message" id="message" class="form-control" name="message" rows="10" required=""></textarea>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Envoyer</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+</main>
+<!-- End #main -->
+
+<!-- ======= Footer ======= -->
+<footer style="font-size: small" id="footer">
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright 2024 <strong><br><span> Designed by Rémi GENTE</span></strong>
+    </div>
+    <div class="credits">
+      Tous droits réservés
+    </div>
+  </div>
+</footer>
+<!-- End  Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.umd.js"></script>
+<script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="portfolio/js/main.js"></script>
+<script src="ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="portfolio/js/flip-box.js"></script>
+
+</body>
+</html>

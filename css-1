@@ -1,0 +1,6 @@
+﻿@font-face {
+  font-family: 'Mukta';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/mukta/v16/iJWHBXyXfDDVXbF6iGmd8WU.ttf) format('truetype');
+}
